@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { SessionProviderWrapper } from "@/components/SessionProviderWrapper";
 
+export const dynamic = 'force-dynamic';
+
 export const metadata: Metadata = {
   title: "BK · Painel de Inadimplência ZAMP",
   description: "Painel de Gestão de Inadimplência ZAMP - BK",
