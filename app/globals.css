@@ -2,22 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap');
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #0e0f11;
+  --bg2: #141619;
+  --bg3: #1a1d21;
+  --border: rgba(255,255,255,0.08);
+  --border2: rgba(255,255,255,0.14);
+  --text: #e8eaed;
+  --text2: #9aa0a8;
+  --text3: #5f6368;
+  --red: #e24b4a;
+  --red-bg: rgba(226,75,74,0.12);
+  --red-border: rgba(226,75,74,0.3);
+  --green: #34a853;
+  --green-bg: rgba(52,168,83,0.12);
+  --amber: #f9ab00;
+  --amber-bg: rgba(249,171,0,0.12);
+  --blue: #4285f4;
+  --blue-bg: rgba(66,133,244,0.12);
+  --purple: #9c6fd6;
+  --purple-bg: rgba(156,111,214,0.12);
+  --accent: #ff5722;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'IBM Plex Sans', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  font-size: 13px;
+  min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border2);
+  border-radius: 4px;
 }
 
 @layer utilities {
